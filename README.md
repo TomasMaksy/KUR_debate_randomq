@@ -44,7 +44,7 @@ git clone https://github.com/TomasMaksy/KUR_debate_randomq.git
 
 ## Changing Guest Names
 
-To change the names for the guests, open the `guest_names.py` file and modify the list of names:
+To change the names for the guests, open the `app.py` file and modify the list of names:
 
 ```python
 guest_names = ["Guest 1", "Guest 2", "Guest 3", "Guest 4"]
