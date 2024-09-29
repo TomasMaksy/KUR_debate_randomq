@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>Guest Selector</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="guest-grid" class="odd">
+        <div class="card" id="guest-1">
+          <div class="owner-name"></div>
+          <div class="selected-name">?</div>
+        </div>
+        <div class="card" id="guest-2">
+          <div class="owner-name"></div>
+          <div class="selected-name">?</div>
+        </div>
+        <div class="card" id="guest-3">
+          <div class="owner-name"></div>
+          <div class="selected-name">?</div>
+        </div>
+        <div class="card" id="guest-4">
+          <div class="owner-name"></div>
+          <div class="selected-name">?</div>
+        </div>
+      </div>
+
+      <button id="select-button">Select Guests</button>
+    </div>
+    <audio
+      id="roll-sound"
+      src="{{ url_for('static', filename='roll-sound3sec.mp3') }}"
+      preload="auto"
+    ></audio>
+    <!-- Sound file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

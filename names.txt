@@ -1,0 +1,1 @@
+GUESTS = ["Tomek Maksymowicz", "Edyta Maksymowicz", "Janek Wierbiel", "Walenty Wojniłło"]

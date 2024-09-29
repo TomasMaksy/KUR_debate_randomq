@@ -1,0 +1,94 @@
+html, body {
+    height: 100%; /* Full height for body */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    background-color: #f8f9fa; /* Light background for modern look */
+    font-family: Arial, sans-serif; /* Clean font */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.container {
+    display: flex; /* Use flexbox for centering the grid */
+    flex-direction: column; /* Allow stacking if needed */
+    align-items: center; /* Center content horizontally */
+    justify-content: center;
+    width: 100%; /* Full width */
+}
+
+#guest-grid {
+    display: grid;
+    gap: 20px; /* Space between cards */
+    width: 75vw; /* 75% of the viewport width */
+    height: 75vh; /* 75% of the viewport height */
+    justify-items: center; /* Center items in the grid */
+}
+
+/* Styles for even number of guests */
+#guest-grid.even {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+}
+
+/* Styles for odd number of guests */
+#guest-grid.odd {
+    grid-template-columns: repeat(2, 1fr); /* Always use 2 columns */
+    justify-items: center; /* Center items horizontally */
+}
+
+/* Guest card styles */
+.card {
+    background-color: #ffffff; /* Card background */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    height: calc(75vh / 3 - 20px); /* Height to fit 3 in a row */
+    width: calc(75vw / 2 - 20px); /* Width for 2 columns */
+    display: flex; /* Flex for internal content alignment */
+    flex-direction: column; /* Arrange button and text vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button {
+    font-size: 24px; /* Larger text for the button */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:disabled {
+    background-color: #c0c0c0; /* Gray out the button when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+
+.owner-name {
+    font-size: 36px; /* Larger font for owner name */
+    font-weight: bold; /* Bold for emphasis */
+    margin-bottom: 10px; /* Space below the owner name */
+}
+
+.selected-name {
+    font-size: 30px; /* Slightly smaller for the selected name */
+    color: #007bff; /* Different color for emphasis */
+}
