@@ -1,5 +1,3 @@
-"""# Debate App
-
 A simple web application that facilitates a live debate format where guests randomly draw names to ask questions.
 
 ## Features
