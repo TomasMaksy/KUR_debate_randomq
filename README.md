@@ -1,3 +1,5 @@
+# Debate App
+
 A simple web application that facilitates a live debate format where guests randomly draw names to ask questions.
 
 ## Features
@@ -37,7 +39,7 @@ Make sure you have Python installed on your machine. You can download it from [p
    - On Windows:
 
      \`\`\`bash
-     .\\venv\\Scripts\\activate
+     .\venv\Scripts\activate
      \`\`\`
 
    - On macOS/Linux:
@@ -77,3 +79,6 @@ python app.py
 
 Replace \`app.py\` with the name of your main application file if it is different.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
