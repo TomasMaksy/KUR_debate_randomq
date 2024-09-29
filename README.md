@@ -1,84 +1,60 @@
+
 # Debate App
 
-A simple web application that facilitates a live debate format where guests randomly draw names to ask questions.
+This repository contains a simple application for managing debates, allowing guests to randomly select whom they will ask questions. 
 
-## Features
-
-- Random name selection for debate guests
-- Easy-to-use interface
-- Dynamic layout based on the number of guests
-
-## Prerequisites
-
-Make sure you have Python installed on your machine. You can download it from [python.org](https://www.python.org/downloads/).
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [How to Clone the Repository](#how-to-clone-the-repository)
+- [Changing Guest Names](#changing-guest-names)
 
 ## Installation
 
-1. **Clone the repository:**
+To set up the project, clone the repository and install the required dependencies. Ensure you have Python and pip installed.
 
-   Open your terminal and run the following command to clone the repository:
+```bash
+git clone https://github.com/TomasMaksy/KUR_debate_randomq.git
+cd KUR_debate_randomq
+# Create a virtual environment if you want (optional)
+python -m venv venv
+# Activate the virtual environment (Windows)
+venv\Scripts\activate
+# Activate the virtual environment (macOS/Linux)
+source venv/bin/activate
+# Install required packages
+pip install -r requirements.txt
+```
 
-   \`\`\`bash
-   git clone https://github.com/TomasMaksy/KUR_debate_randomq.git
-   \`\`\`
+## Usage
 
-2. **Navigate to the project directory:**
+Once the installation is complete, run the application using the following command:
 
-   \`\`\`bash
-   cd KUR_debate_randomq
-   \`\`\`
-
-3. **Set up a virtual environment (optional but recommended):**
-
-   \`\`\`bash
-   python -m venv venv
-   \`\`\`
-
-   Activate the virtual environment:
-
-   - On Windows:
-
-     \`\`\`bash
-     .\venv\Scripts\activate
-     \`\`\`
-
-   - On macOS/Linux:
-
-     \`\`\`bash
-     source venv/bin/activate
-     \`\`\`
-
-4. **Install the required packages:**
-
-   Ensure you have all the necessary packages installed. If you have a \`requirements.txt\` file, run:
-
-   \`\`\`bash
-   pip install -r requirements.txt
-   \`\`\`
-
-## Configuration
-
-To change the names of the guests, open the \`guest_names.py\` file and modify the list of names:
-
-\`\`\`python
-guest_names = [
-    "Guest 1",
-    "Guest 2",
-    "Guest 3",
-    "Guest 4",
-]
-\`\`\`
-
-## Running the Application
-
-To start the application, run the following command in your terminal:
-
-\`\`\`bash
+```bash
 python app.py
-\`\`\`
+```
 
-Replace \`app.py\` with the name of your main application file if it is different.
+## How to Clone the Repository
+
+To clone the repository, use the following command:
+
+```bash
+git clone https://github.com/TomasMaksy/KUR_debate_randomq.git
+```
+
+## Changing Guest Names
+
+To change the names for the guests, open the `guest_names.py` file and modify the list of names:
+
+```python
+guest_names = ["Guest 1", "Guest 2", "Guest 3", "Guest 4"]
+```
+
+## Contributing
+
+Feel free to fork the repository and submit pull requests for any improvements or features you would like to add.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
