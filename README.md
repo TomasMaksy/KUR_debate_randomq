@@ -49,12 +49,3 @@ To change the names for the guests, open the `guest_names.py` file and modify th
 ```python
 guest_names = ["Guest 1", "Guest 2", "Guest 3", "Guest 4"]
 ```
-
-## Contributing
-
-Feel free to fork the repository and submit pull requests for any improvements or features you would like to add.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
